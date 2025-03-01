@@ -3,57 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <title>安易加速器 - 安全加密的全球VPN网络加速解决方案｜企业级隐私保护</title>
-    <meta name="description" content="安易加速器VPN专业评测：采用军用级AES-256加密与WireGuard协议，覆盖120个国家服务器节点，实现安全稳定的跨境网络加速与隐私保护。">
+    <meta name="description" content="安易加速器VPN免费试用365天：采用军用级AES-256加密与WireGuard协议，覆盖120个国家服务器节点，实现安全稳定的跨境网络加速与隐私保护。">
     <meta name="keywords" content="安易加速器,安易VPN">
-    <style>
-        .feature-card {
-            background: #0d6efd;
-            color: #FFFFFF;
-            padding: 1rem;
-            border-radius: 10px;
-            text-align: center;
-        }
-        :root {
-            --vpn-primary: #27ae60;
-            --vpn-secondary: #2c3e50;
-        }
+<style>
+    /* 新增viewport meta标签 */
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    :root {
+        --vpn-primary: #27ae60;
+        --vpn-secondary: #2c3e50;
+        --container-padding: clamp(1rem, 5vw, 2rem); /* 响应式padding */
+    }
+
+    body {
+        font-family: 'Helvetica Neue', sans-serif;
+        line-height: 1.6; /* 优化行高 */
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--container-padding);
+        color: var(--vpn-secondary);
+        font-size: 1rem; /* 基准字体大小 */
+    }
+
+    /* 响应式标题 */
+    h1 { font-size: clamp(1.5rem, 4vw, 2.25rem); }
+    h2 { font-size: clamp(1.3rem, 3vw, 1.75rem); }
+    h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
+
+    .feature-card {
+        background: #0d6efd;
+        color: #FFFFFF;
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.2s; /* 增加交互效果 */
+        margin: 0.5rem;
+    }
+
+    .protocol-compare {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .protocol-card {
+        padding: 1.5rem;
+        border-radius: 8px;
+        background: #f8f9fa;
+        min-height: 200px; /* 保持卡片高度一致 */
+    }
+
+    .server-coverage {
+        background: linear-gradient(90deg, var(--vpn-primary) 75%, #3498db 0);
+        padding: 1rem;
+        color: #000000;
+        border-radius: 4px;
+        overflow: hidden; /* 防止渐变溢出 */
+        white-space: nowrap;
+    }
+
+    .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2rem 0;
+        text-align: center;
+        overflow-x: auto; /* 表格响应式处理 */
+        display: block; /* 启用横向滚动 */
+    }
+
+    /* 移动端优化 */
+    @media (max-width: 768px) {
         body {
-            font-family: 'Helvetica Neue', sans-serif;
-            line-height: 1.8;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-            color: var(--vpn-secondary);
-        }
-        .vpn-keyword {
-            color: var(--vpn-primary);
-            font-weight: 600;
-            border-bottom: 2px dotted;
-        }
-        .protocol-compare {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        .protocol-card {
-            padding: 1.5rem;
-            border-radius: 8px;
-            background: #f8f9fa;
-        }
-        .server-coverage {
-            background: linear-gradient(90deg, var(--vpn-primary) 75%, #3498db 0);
+            line-height: 1.5;
             padding: 1rem;
-            color: white;
-            border-radius: 4px;
         }
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
+
+        .protocol-compare {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .server-coverage {
+            white-space: normal; /* 允许文字换行 */
             text-align: center;
         }
-    </style>
+
+        .feature-card {
+            padding: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .data-table {
+            min-width: 600px; /* 保持表格最小宽度 */
+
+        }
+    }
+
+    /* 小屏手机优化 */
+    @media (max-width: 480px) {
+        :root {
+            --container-padding: 0.5rem;
+        }
+
+        h1 {
+            font-size: 1.3rem;
+        }
+
+        .protocol-card {
+            padding: 1rem;
+            min-height: auto;
+        }
+
+        .feature-card p {
+            margin: 0.5rem 0;
+        }
+    }
+
+    /* 悬停效果 */
+    @media (hover: hover) {
+        .feature-card:hover {
+            transform: translateY(-3px);
+        }
+    }
+</style>
 </head>
 <body>
 
@@ -156,7 +229,7 @@
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "安易加速器",
-        "description": "企业级加密VPN解决方案",
+        "description": "免费试用365天,企业级加密VPN解决方案",
         "brand": {
             "@type": "Brand",
             "name": "安易加速器"
@@ -167,7 +240,7 @@
     <!-- 法律声明 -->
     <footer style="margin-top:3rem;border-top:1px solid #eee;padding:1rem">
         <p>免责声明：<strong>安易加速器</strong>严禁用于任何违法用途，用户需遵守所在地法律法规</p>
-        <p>© 2025 安易加速器</p>
+        <p>© 2025 <a href="https://anyivpn.github.io">安易加速器</a></p>
     </footer>
 </body>
 </html>

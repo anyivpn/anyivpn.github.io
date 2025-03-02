@@ -241,19 +241,44 @@
     </article>
 
     <!-- 结构化数据 -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "安易加速器",
-        "description": "免费试用365天,企业级加密VPN解决方案",
-        "brand": {
-            "@type": "Brand",
-            "name": "安易加速器"
-        },
-    }
-    </script>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": ["SoftwareApplication", "MobileApplication"], // 同时适配PC和移动端
+  "name": "安易加速器",
+  "description": "新用户试用365天,企业级加密VPN解决方案",
+  "brand": "安易科技", // 品牌名称（与产品名区分）
+  "image": [
+    "https://www.xn--vpn-128dw501a.com/ico.png",        // 应用图标（建议尺寸：1024x1024像素）
+    "https://www.xn--vpn-128dw501a.com/screenshot1.png",     // 屏幕截图（建议尺寸：1242x2208像素）
+    "https://www.xn--vpn-128dw501a.com/screenshot2.png"
+  ],
+  "genre": "工具",                         // Google Play分类
+  "operatingSystem": "Android 11+",// 支持的系统版本
+  "androidVersion": "5.0",                  // Android特定版本
+  "offers": { 
+    "@type": "Offer",
+    "priceCurrency": "CNY",
+    "price": "免费增值（Freemium）", // 可选："99.99" 或 "免费"
+    "availability": "https://schema.org/InStock"
+  },
+  "installUrl": {
+    "@type": "URL",
+    "value": "https://www.anyi555.com/app/download?platform=2&channel=download_01&mid=1040&ts=1739952472384&app=ay": "install"
+  },
+  "contentRating": "所有人",                     // 年龄分级（如：12+、所有人）
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "593038"
+  },
+  "url": "https://www.xn--vpn-128dw501a.com/",       // 应用详情页链接
+  "datePublished": "2024-06-01",            // 上架日期
+  "version": "v1.6",                       // 当前版本号
+  "permissions": "网络访问、存储权限",       // 所需权限（需简洁描述）
+  "fileFormat": ["APK"]                // 安装包格式
+}
+</script>
     <!-- 法律声明 -->
     <footer style="margin-top:3rem;border-top:1px solid #eee;padding:1rem">
         <p>免责声明：<strong>安易加速器</strong>严禁用于任何违法用途，用户需遵守所在地法律法规</p>
